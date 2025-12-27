@@ -1,3 +1,4 @@
+import Link from "next/link"
 export function Navbar (){
     return <><div><header className="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-blue-600 text-sm py-3">
     <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
@@ -9,19 +10,11 @@ export function Navbar (){
           </button>
         </div>
       </div>
-      <div id="hs-navbar-primary" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-primary-collapse">
-        <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-          <a className="font-medium text-white focus:outline-hidden" href="#" aria-current="page">Landing</a>
-          <a className="font-medium text-gray-300 hover:text-white focus:outline-hidden focus:text-white" href="#">Account</a>
-          <a className="font-medium text-gray-300 hover:text-white focus:outline-hidden focus:text-white" href="#">Work</a>
-          <a className="font-medium text-gray-300 hover:text-white focus:outline-hidden focus:text-white" href="#">Blog</a>
-        </div>
+      <div id="hs-navbar-primary" className="pb-5 hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-primary-collapse">
       </div>
     </nav>
   </header>
   </div>
- 
-    
 <div id="hs-sidebar-content-push-to-mini-sidebar" className=" hs-overlay [--auto-close:lg] hs-overlay-minified:w-13 lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 w-64
 hs-overlay-open:translate-x-0
 -translate-x-full transition-all duration-300 transform
@@ -51,35 +44,36 @@ bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700" r
         <div className=" pb-0 px-2  w-full flex flex-col flex-wrap" >
           <ul className="space-y-1">
             <li>
-              <a className="min-h-[36px] flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-white" href="/">
+              <Link className="min-h-[36px] flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-white" href="/">
                 <span className="hs-overlay-minified:hidden">Beranda</span>
-              </a>
+              </Link>
             </li>
               <li>
-              <a className="min-h-[36px] w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200" href="/pesan_tiket">
+              <Link className="min-h-[36px] w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200" href="/pesan_tiket">
                 <span className="hs-overlay-minified:hidden">Pesan Tiket</span>
-              </a>
+              </Link>
             </li>
              <li>
-              <a className="min-h-[36px] w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200" href="/jadwal_penerbangan">
+             <Link className="min-h-[36px] w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200" href="/jadwal_penerbangan">
                 <span className="hs-overlay-minified:hidden">Jadwal Penerbangan</span>
-              </a>
+              </Link>
             </li>
               <li>
-              <a className="min-h-[36px] w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200" href="/pembayaran">
+              <Link className="min-h-[36px] w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200" href="/pembayaran">
                <span className="hs-overlay-minified:hidden">Pembayaran</span>
-              </a>
+              </Link>
             </li>
               <li>
-              <a className="min-h-[36px] w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200" href="/riwayat_transaksi">
+              <Link className="min-h-[36px] w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-neutral-200" href="/riwayat_transaksi">
                 <span className="hs-overlay-minified:hidden">Riwayat Transaksi</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </nav>
   </div>
-</div></> 
+</div>
+</> 
 
 }
 
